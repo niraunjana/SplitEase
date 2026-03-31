@@ -30,6 +30,7 @@
 
 ---
 
+
 ## 🚀 Live Demo
 
 👉 **https://split-ease-sigma.vercel.app/**
@@ -57,6 +58,17 @@
 - 🚀 Vercel
 
 ---
+
+<img width="926" height="362" alt="image" src="https://github.com/user-attachments/assets/aa889a36-3cf9-4c49-b73e-e98825da9feb" />
+
+<img width="1042" height="515" alt="image" src="https://github.com/user-attachments/assets/11bcd956-582b-40f7-89fe-01c6a97b9568" />
+
+<img width="1136" height="283" alt="image" src="https://github.com/user-attachments/assets/c86f4b20-1f97-4425-8a37-3606d6cc5805" />
+
+<img width="1204" height="514" alt="image" src="https://github.com/user-attachments/assets/9371f2d6-b690-4393-b427-b2f9380495f4" />
+
+<img width="1230" height="505" alt="image" src="https://github.com/user-attachments/assets/a37b7d37-a796-4360-85f6-5f905d4dbabe" />
+
 
 ## 📸 Screenshots
 
