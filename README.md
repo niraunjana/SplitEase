@@ -82,6 +82,8 @@
 
 > Expenses, balances, and insights in one place
 
+> <img width="1904" height="896" alt="image" src="https://github.com/user-attachments/assets/b64610f3-e58a-4e39-b5eb-a8a75d4c8ab6" />
+
 <img width="1890" height="889" alt="image" src="https://github.com/user-attachments/assets/b94de359-99af-47ff-88c1-76f7ed38673c" />
 
 <img width="1886" height="892" alt="image" src="https://github.com/user-attachments/assets/42b4037f-e48c-4bbf-b2af-b541d26f6d1f" />
