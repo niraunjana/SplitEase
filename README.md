@@ -32,7 +32,7 @@
 
 ## 🚀 Live Demo
 
-👉 **[https://split-ease.vercel.app](https://split-ease.vercel.app)**
+👉 **https://split-ease-sigma.vercel.app/**
 
 ### Demo Credentials
 > No sign-up required! Just open the app and start splitting.
@@ -61,7 +61,10 @@
 ## 📸 Screenshots
 
 ### 🏠 Home Page
+
 > Clean landing page with live expense preview card
+> <img width="1841" height="903" alt="image" src="https://github.com/user-attachments/assets/e3b5b737-f444-43a0-a694-04241140a4f2" />
+
 
 ### 📋 Dashboard
 > Overview of all groups with total stats
@@ -147,8 +150,8 @@ SplitEase/
 
 ## 👩‍💻 Developer
 
-**Niraunjana**
-- GitHub: [@niraunjana](https://github.com/niraunjana)
+**Niraunjana Gayathri G R**
+- GitHub: https://github.com/niraunjana
 
 ---
 
