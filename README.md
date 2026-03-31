@@ -76,10 +76,28 @@
 
 
 ### 💰 Group Detail
+
 > Expenses, balances, and insights in one place
 
+<img width="1890" height="889" alt="image" src="https://github.com/user-attachments/assets/b94de359-99af-47ff-88c1-76f7ed38673c" />
+
+<img width="1886" height="892" alt="image" src="https://github.com/user-attachments/assets/42b4037f-e48c-4bbf-b2af-b541d26f6d1f" />
+
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/e136ae3f-5cb2-475d-a324-5dc8733c5c33" />
+
+<img width="1888" height="829" alt="image" src="https://github.com/user-attachments/assets/e2591557-4edc-4d4f-93d3-de2dd962d44b" />
+
+<img width="1910" height="915" alt="image" src="https://github.com/user-attachments/assets/9e610a58-223b-46eb-a358-f6c8db927ab4" />
+
 ### 📊 Analytics Sidebar
+
 > Dark-themed analytics panel with donut charts and settlement planner
+
+<img width="1906" height="911" alt="image" src="https://github.com/user-attachments/assets/9401499a-be6e-4697-af2a-1183b2662d7e" />
+
+<img width="1909" height="908" alt="image" src="https://github.com/user-attachments/assets/3c91a757-4c02-4a10-a364-7b0b52be9d9e" />
+
+<img width="1891" height="908" alt="image" src="https://github.com/user-attachments/assets/2cd4ad04-ede1-4096-846c-efa7384e9b89" />
 
 ---
 
