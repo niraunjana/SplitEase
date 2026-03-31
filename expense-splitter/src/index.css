@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #7C3AED;
+  --primary-dark: #6D28D9;
+  --primary-light: #EDE9FE;
+  --accent: #F43F5E;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --bg: #F5F3FF;
+  --card: #FFFFFF;
+  --text: #1E1B4B;
+  --muted: #6B7280;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'Bricolage Grotesque', sans-serif; }
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F5F3FF; }
+::-webkit-scrollbar-thumb { background: #C4B5FD; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #A78BFA; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ── NEW: hero card animations ── */
+@keyframes floatA {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes floatB {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(10px); }
+}
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes fillBar {
+  from { width: 0; }
+  to   { width: 64%; }
+}
+
+.animate-fadeInUp { animation: fadeInUp 0.5s ease forwards; }
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-popIn { animation: popIn 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 80ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 160ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 240ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 320ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 400ms; }
+
+.glass {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7C3AED, #F43F5E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px rgba(124,58,237,0.18);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7C3AED, #6D28D9);
+  color: white;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 14px;
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #6D28D9, #5B21B6);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(124,58,237,0.45);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-danger {
+  background: linear-gradient(135deg, #F43F5E, #E11D48);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 14px;
+  border: none;
+}
+.btn-danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(244,63,94,0.4);
+}
+
+.input-field {
+  background: #FAF9FF;
+  border: 2px solid #E9D5FF;
+  border-radius: 14px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  outline: none;
+  color: #1E1B4B;
+  width: 100%;
+  padding: 12px 16px;
+}
+.input-field:focus {
+  border-color: #7C3AED;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(124,58,237,0.12);
+}
+.input-field::placeholder { color: #A78BFA; }
+
+.form-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #7C3AED;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Vibrant category colors */
+.cat-food { background: #FEF3C7; color: #B45309; border: 1px solid #FDE68A; }
+.cat-transport { background: #DBEAFE; color: #1D4ED8; border: 1px solid #BFDBFE; }
+.cat-shopping { background: #FCE7F3; color: #BE185D; border: 1px solid #F9A8D4; }
+.cat-entertainment { background: #EDE9FE; color: #6D28D9; border: 1px solid #C4B5FD; }
+.cat-accommodation { background: #D1FAE5; color: #065F46; border: 1px solid #6EE7B7; }
+.cat-utilities { background: #E0F2FE; color: #0369A1; border: 1px solid #BAE6FD; }
+.cat-healthcare { background: #FFE4E6; color: #BE123C; border: 1px solid #FCA5A5; }
+.cat-other { background: #F3F4F6; color: #374151; border: 1px solid #D1D5DB; }
+
+/* Rich mesh background */
+.mesh-bg {
+  background:
+    radial-gradient(at 15% 15%, rgba(124,58,237,0.15) 0%, transparent 55%),
+    radial-gradient(at 85% 10%, rgba(244,63,94,0.10) 0%, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(16,185,129,0.08) 0%, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(245,158,11,0.08) 0%, transparent 50%),
+    #F5F3FF;
+}
+
+/* Stat card */
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 18px 22px;
+  border: 1.5px solid #EDE9FE;
+  box-shadow: 0 4px 16px rgba(124,58,237,0.08);
+}
+
+/* Member avatar colors — 10 distinct vivid hues */
+.avatar-0 { background: linear-gradient(135deg, #7C3AED, #A855F7); }
+.avatar-1 { background: linear-gradient(135deg, #2563EB, #38BDF8); }
+.avatar-2 { background: linear-gradient(135deg, #DB2777, #F472B6); }
+.avatar-3 { background: linear-gradient(135deg, #059669, #34D399); }
+.avatar-4 { background: linear-gradient(135deg, #D97706, #FCD34D); }
+.avatar-5 { background: linear-gradient(135deg, #DC2626, #F87171); }
+.avatar-6 { background: linear-gradient(135deg, #0891B2, #67E8F9); }
+.avatar-7 { background: linear-gradient(135deg, #7C3AED, #EC4899); }
+.avatar-8 { background: linear-gradient(135deg, #16A34A, #86EFAC); }
+.avatar-9 { background: linear-gradient(135deg, #EA580C, #FCA5A5); }
+
+/* Expense card left accent border per category */
+.expense-food { border-left: 4px solid #F59E0B; }
+.expense-transport { border-left: 4px solid #3B82F6; }
+.expense-shopping { border-left: 4px solid #EC4899; }
+.expense-entertainment { border-left: 4px solid #8B5CF6; }
+.expense-accommodation { border-left: 4px solid #10B981; }
+.expense-utilities { border-left: 4px solid #0EA5E9; }
+.expense-healthcare { border-left: 4px solid #F43F5E; }
+.expense-other { border-left: 4px solid #9CA3AF; }
+
+
+/* ============================================================
+   HERO SECTION — two-column layout with floating card
+   ============================================================ */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  min-height: calc(100vh - 80px);
+  padding: 40px 60px 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Right column wrapper */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinning dashed ring behind card */
+.dashed-ring {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 2px dashed rgba(124, 58, 237, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 24s linear infinite;
+  pointer-events: none;
+}
+
+/* The card itself */
+.expense-card-wrapper {
+  position: relative;
+  z-index: 5;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 28px;
+  width: 340px;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 20px 60px rgba(124, 58, 237, 0.15),
+    0 40px 80px rgba(0, 0, 0, 0.06);
+  transform: rotate(2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expense-card-wrapper:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 28px 72px rgba(124, 58, 237, 0.22),
+    0 48px 96px rgba(0, 0, 0, 0.08);
+}
+
+/* Floating status pills */
+.float-pill {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pill-gets    { top: 8%;    left: -10%; color: #10B981; animation: floatA 3.5s ease-in-out infinite; }
+.pill-owes    { bottom: 12%; left: -12%; color: #F43F5E; animation: floatB 4s   ease-in-out infinite; }
+.pill-settled { top: 14%;  right: -8%; color: #7C3AED; animation: floatA 4.5s ease-in-out infinite; }
+
+/* Progress bar inside card */
+.progress-bar-wrap { margin-top: 16px; }
+
+.progress-bar-track {
+  background: #EDE9FE;
+  border-radius: 100px;
+  height: 7px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #7C3AED, #A855F7);
+  width: 64%;
+  animation: fillBar 1.2s ease 0.5s both;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    min-height: unset;
+    gap: 32px;
+  }
+  .hero-visual { margin-top: 20px; }
+  .dashed-ring { width: 280px; height: 280px; }
+  .expense-card-wrapper { width: 300px; }
+  .pill-gets, .pill-owes, .pill-settled { display: none; }
+}
