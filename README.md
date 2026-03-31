@@ -63,6 +63,7 @@
 ### 🏠 Home Page
 
 > Clean landing page with live expense preview card
+
 > <img width="1841" height="903" alt="image" src="https://github.com/user-attachments/assets/e3b5b737-f444-43a0-a694-04241140a4f2" />
 
 
