@@ -69,6 +69,9 @@
 ### 📋 Dashboard
 
 > Overview of all groups with total stats
+
+> <img width="1590" height="893" alt="image" src="https://github.com/user-attachments/assets/e17f1dbb-e1bc-4a14-b71e-63f00242c27a" />
+
 > <img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/b4c01134-8def-4d9a-8099-c55b0701ed5b" />
 
 
